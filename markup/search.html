@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albie</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="./css/swiper-bundle.css" /> -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="javascript:void(0)" class="header__logo">
+        <img src="./img/logo.svg" alt="">
+      </a>
+      <div class="header__btn">
+        <a href="javascript:void(0)" class="btn">
+          <p>Get Free Shortlist</p>
+          <span>With Live Availability</span>
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="javascript:void(0)">Search</a></li>
+          <li><a href="javascript:void(0)"> For Providers</a></li>
+          <li><a href="javascript:void(0)">About Us</a></li>
+          <li><a href="javascript:void(0)">Blog</a></li>
+          <li><a href="javascript:void(0)">Contact Us</a></li>
+        </ul>
+      </nav>
+      <img src="./img/icons/burger.svg" alt="" class="header__burger">
+    </div>
+  </div>
+</header>
+
+  <main>
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__content">
+          <a href="javascript:void(0)">Home</a>
+          <img src="img/icons/breadcrumbs-arrow.svg" alt="">
+          <a class="active" href="javascript:void(0)">Search</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="heading heading_center heading_with-img">
+      <div class="container">
+        <h1><strong>Search</strong></h1>
+      </div>
+    </section>
+
+    <section class="search-input">
+      <div class="container">
+        <form class="search-input__content">
+          <div class="input-wrapper">
+            <input class="postcode visible" type="text" placeholder="Enter Location or Postcode">
+            <input class="provider-input" type="text" placeholder="Enter Service or Provider name">
+          </div>
+          <div class="search-input__text-with-btn">
+            <p>Please Note, your search will not include LIVE AVAILABILITY, if required please use GET FREE SHORTLIST WITH LIVE AVAILABILITY</p>
+            <img src="img/search-arrow.svg" alt="">
+            <button class="btn">
+              <p>Get Free Shortlist</p>
+              <span>With Live Availability</span>
+            </button>
+          </div>
+          <div class="search-input__tabs">
+            <a class="tab-active" onclick="switchInputAndTab(event)" href=" javascript:void(0)" data-input="postcode">Search by <strong>Location</strong></a>
+            <a href="javascript:void(0)" onclick="switchInputAndTab(event)" data-input="provider-input">Search by <strong>Service or Provider Name</strong></a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="filter filter_search">
+      <div class="container">
+        <div class="filter__content">
+          <a class="active" href="javascriptLvoid(0)">Care Homes</a>
+          <a href="javascriptLvoid(0)">Live-in care</a>
+          <a href="javascriptLvoid(0)">Home care</a>
+          <a href="javascriptLvoid(0)">Independent Living</a>
+        </div>
+        <div class="filter__content filter__content_search">
+          <a class="active" href="javascriptLvoid(0)">Care Type</a>
+          <a href="javascriptLvoid(0)">For How Long</a>
+          <a href="javascriptLvoid(0)">Price per Week</a>
+          <a href="javascriptLvoid(0)">Care Home Size</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-items">
+      <div class="container">
+        <div class="search-items__content">
+          <div class="item">
+            <img src="img/search-img-1.png" alt="" class="item__img">
+            <div class="item__text">
+              <div class="item__title">
+                <h3>Nayland House</h3>
+                <img src="img/search-item-logo.png" alt="">
+              </div>
+              <div class="item__price">
+                <span>Care Home</span>
+                <span><b>54</b> Rooms from <b>£1,100 / week</b></span>
+              </div>
+              <div class="item__location">
+                <img src="img/icons/pin.svg" alt="">
+                <p>Bear Street, Nayland, Colchester CO6 4LA</p>
+              </div>
+              <div class="item__description">
+                <p>Nayland House, in Colchester, specialises in elderly and dementia care for older residents within a homely environment that respects personal freedoms and an active lifestyle.</p>
+              </div>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/search-img-2.png" alt="" class="item__img">
+            <div class="item__text">
+              <div class="item__title">
+                <h3>Minchenden Lodge</h3>
+                <img src="img/search-item-logo.png" alt="">
+              </div>
+              <div class="item__price">
+                <span>Care Home</span>
+                <span><b>54</b> Rooms from <b>£1,100 / week</b></span>
+              </div>
+              <div class="item__location">
+                <img src="img/icons/pin.svg" alt="">
+                <p>Bear Street, Nayland, Colchester CO6 4LA</p>
+              </div>
+              <div class="item__description">
+                <p>Nayland House, in Colchester, specialises in elderly and dementia care for older residents within a homely environment that respects personal freedoms and an active lifestyle.</p>
+              </div>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/search-img-3.png" alt="" class="item__img">
+            <div class="item__text">
+              <div class="item__title">
+                <h3>Woodbury Manor</h3>
+                <img src="img/search-item-logo.png" alt="">
+              </div>
+              <div class="item__price">
+                <span>Care Home</span>
+                <span><b>54</b> Rooms from <b>£1,100 / week</b></span>
+              </div>
+              <div class="item__location">
+                <img src="img/icons/pin.svg" alt="">
+                <p>Bear Street, Nayland, Colchester CO6 4LA</p>
+              </div>
+              <div class="item__description">
+                <p>Nayland House, in Colchester, specialises in elderly and dementia care for older residents within a homely environment that respects personal freedoms and an active lifestyle.</p>
+              </div>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/search-img-4.png" alt="" class="item__img">
+            <div class="item__text">
+              <div class="item__title">
+                <h3>Muscliff Nursing Home</h3>
+                <img src="img/search-item-logo.png" alt="">
+              </div>
+              <div class="item__price">
+                <span>Care Home</span>
+                <span><b>54</b> Rooms from <b>£1,100 / week</b></span>
+              </div>
+              <div class="item__location">
+                <img src="img/icons/pin.svg" alt="">
+                <p>Bear Street, Nayland, Colchester CO6 4LA</p>
+              </div>
+              <div class="item__description">
+                <p>Nayland House, in Colchester, specialises in elderly and dementia care for older residents within a homely environment that respects personal freedoms and an active lifestyle.</p>
+              </div>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/search-img-5.png" alt="" class="item__img">
+            <div class="item__text">
+              <div class="item__title">
+                <h3>Bullsmoor Lodge</h3>
+                <img src="img/search-item-logo.png" alt="">
+              </div>
+              <div class="item__price">
+                <span>Care Home</span>
+                <span><b>54</b> Rooms from <b>£1,100 / week</b></span>
+              </div>
+              <div class="item__location">
+                <img src="img/icons/pin.svg" alt="">
+                <p>Bear Street, Nayland, Colchester CO6 4LA</p>
+              </div>
+              <div class="item__description">
+                <p>Nayland House, in Colchester, specialises in elderly and dementia care for older residents within a homely environment that respects personal freedoms and an active lifestyle.</p>
+              </div>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="item">
+            <img src="img/search-img-6.png" alt="" class="item__img">
+            <div class="item__text">
+              <div class="item__title">
+                <h3>Hargrave House</h3>
+                <img src="img/search-item-logo.png" alt="">
+              </div>
+              <div class="item__price">
+                <span>Care Home</span>
+                <span><b>54</b> Rooms from <b>£1,100 / week</b></span>
+              </div>
+              <div class="item__location">
+                <img src="img/icons/pin.svg" alt="">
+                <p>Bear Street, Nayland, Colchester CO6 4LA</p>
+              </div>
+              <div class="item__description">
+                <p>Nayland House, in Colchester, specialises in elderly and dementia care for older residents within a homely environment that respects personal freedoms and an active lifestyle.</p>
+              </div>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <a href="javascript:void(0)" class="btn">Load More Results</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="col">
+        <a href="/" class="footer__logo">
+          <img src="./img/logo.svg" alt="">
+        </a>
+        <p>We are a platform for a care seeker, their family, friends or social workers to find care</p>
+        <span class="desktop">© 2023 - All Rights Reserved</span>
+      </div>
+      <div class="col footer__menu">
+        <a href="javascript:void(0)">About Us</a>
+        <a href="javascript:void(0)">Search</a>
+        <a href="javascript:void(0)">Providers</a>
+        <a href="javascript:void(0)">Blog</a>
+        <a href="javascript:void(0)">Contact Us</a>
+      </div>
+      <span class="mob">© 2023 - All Rights Reserved</span>
+    </div>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- <script src="./js/swiper-bundle.js"></script> -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

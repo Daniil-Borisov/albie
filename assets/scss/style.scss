@@ -1,0 +1,192 @@
+@import "libs/vars";
+@import "libs/header";
+@import "libs/footer";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat.ttf");
+}
+
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("../fonts/Cocogoose-Pro-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("../fonts/Cocogoose-Pro-Darkmode.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "COCOGOOSE";
+  src: url("../fonts/Cocogoose-Pro-Thin.ttf");
+  font-weight: 250;
+}
+
+@font-face {
+  font-family: "Coming Soon";
+  src: url("../fonts/ComingSoon-Regular.ttf");
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  font-weight: 400;
+  text-decoration: none;
+  font-family: $montserrat;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  color: $primary-text;
+  background: $main-bg;
+}
+
+main {
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+}
+
+ul li,
+ol li {
+  margin: 0;
+}
+
+.container {
+  z-index: 4;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+
+  @media (min-width: 1024px) {
+    width: 920px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 1220px;
+    padding: 0;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 31px;
+  background: $accent1;
+  color: #fff;
+  font-family: $montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border-radius: 120px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.07);
+  max-width: 396px;
+  width: 100%;
+  flex-direction: column;
+  gap: 14px;
+  border: none;
+  cursor: pointer;
+
+  &.btn__fit {
+    width: fit-content;
+  }
+
+  &.btn__outlined {
+    background: $white;
+    border: 1px solid $accent1;
+    gap: 6px;
+    padding: 6px 19px;
+
+    p {
+      color: $accent1;
+      text-align: center;
+      font-family: $montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    span {
+      color: $accent1;
+      text-align: center;
+      font-family: $montserrat;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+
+  p {
+    color: $white;
+    text-align: center;
+    font-family: $montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0.66px;
+    text-transform: uppercase;
+  }
+
+  span {
+    color: $white;
+    text-align: center;
+    font-family: $montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 320px;
+
+  }
+}

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albie</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="./css/swiper-bundle.css" /> -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <include src="assets/templates/header.html"></include>
+
+  <main>
+    <section class="quest">
+      <div class="container">
+        <div class="quest__content">
+          <div class="quest__text">
+            <h1>Need<br /> some help?</h1>
+            <p>To receive your <strong>FREE SHORTLIST WITH LIVE AVAILABILITY</strong> to your email inbox, please kindly complete all questions and we will be back to you shortly</p>
+            <span>By submitting this form, you’re agreeing to our’s <a href="#">Terms and conditions</a> and <a href="#">Private Policy</a></span>
+          </div>
+          <form action="">
+            <div class="quest__indicator"></div>
+            <div class="quest__form">
+              <div class="quest__item start-quest active">
+                <div class="item__text">
+                  <h2>Receive a <strong>FREE shortlist</strong> with availability directly to your email address</h2>
+                  <p>This is a completely free, no obligation, service provided by our expert elder living consultants</p>
+                </div>
+                <button class="btn btn__fit btn__active">
+                  <p>Start here</p>
+                </button>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>1</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2>What’s your <strong>First Name</strong> (e.g. Mary)*</h2>
+                  <p>Please confirm your first name</p>
+                </div>
+                <div class="item__input">
+                  <div class="input-wrapper ">
+                    <input type="text" placeholder="Type your answer here ...">
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>2</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2>Thanks <span class="name">Sarah</span>. What’s your <strong>Surname</strong> (e.g. Smith)*</h2>
+                  <p>Please confirm your first name</p>
+                </div>
+                <div class="item__input">
+                  <div class="input-wrapper ">
+                    <input type="text" placeholder="Type your answer here ...">
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>3</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2>What is it <strong>you’re looking for</strong>?</h2>
+                  <p>Not sure? Click on ‘’Not Sure’’ below</p>
+                </div>
+                <div class="item__input">
+                  <div class="radio-group">
+                    <div class="radio-item">
+                      <input type="radio" id="3-1" name="3">
+                      <label for="3-1">
+                        <span>a</span>
+                        <p>Care Home</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="3-2" name="3">
+                      <label for="3-2">
+                        <span>b</span>
+                        <p>Home Care</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="3-3" name="3">
+                      <label for="3-3">
+                        <span>c</span>
+                        <p>Retirement Living</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="3-4" name="3">
+                      <label for="3-4">
+                        <span>d</span>
+                        <p>Live-in Care</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="3-5" name="3">
+                      <label for="3-5">
+                        <span>e</span>
+                        <p>Not sure</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>4</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2>Are you looking for <strong>yourself</strong>, a <strong>friend</strong>, a <strong>client</strong>, or a <strong>family member</strong>?*</h2>
+                </div>
+                <div class="item__input">
+                  <div class="radio-group">
+                    <div class="radio-item">
+                      <input type="radio" id="4-1" name="4">
+                      <label for="4-1">
+                        <span>a</span>
+                        <p>Myself</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="4-2" name="4">
+                      <label for="4-2">
+                        <span>b</span>
+                        <p>Friend</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="4-3" name="4">
+                      <label for="4-3">
+                        <span>c</span>
+                        <p>Family Member</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="4-4" name="4">
+                      <label for="4-4">
+                        <span>d</span>
+                        <p>Client</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>5</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2>Are you looking for a large <strong>retirement village</strong>, a medium sized <strong>retirement community</strong> or smaller <strong>retirement housing</strong>?*</h2>
+                  <p>Choose as many as you like</p>
+                </div>
+                <div class="item__input">
+                  <div class="radio-group">
+                    <div class="radio-item">
+                      <input type="radio" id="5-1" name="5">
+                      <label for="5-1">
+                        <span>a</span>
+                        <p>Retirement Village</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="5-2" name="5">
+                      <label for="5-2">
+                        <span>b</span>
+                        <p>Retirement Community</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="5-3" name="5">
+                      <label for="5-3">
+                        <span>c</span>
+                        <p>Retirement Housing</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>6</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+
+                  <h2>You can either <strong>buy, rent</strong> or <strong>part own</strong> retirement properties.</h2>
+                  <h2><strong>Do you have a preference?*</strong></h2>
+                </div>
+                <div class="item__input">
+                  <div class="radio-group">
+                    <div class="radio-item">
+                      <input type="radio" id="6-1" name="6">
+                      <label for="6-1">
+                        <span>a</span>
+                        <p>Buy</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="6-2" name="6">
+                      <label for="5-2">
+                        <span>b</span>
+                        <p>Rent</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="6-3" name="6">
+                      <label for="6-3">
+                        <span>c</span>
+                        <p>Part Buy, Part Rent</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="6-4" name="6">
+                      <label for="6-4">
+                        <span>d</span>
+                        <p>No preference</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>7</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2>Thanks. What <strong>purchase price range</strong> are you interested in?*</h2>
+                  <p>Please select the Minimum value of your price range below. (In the next question you can select a Maximum.)</p>
+                </div>
+                <div class="item__input">
+                  <div class="input-wrapper ">
+                    <input type="text" placeholder="Type or select an option">
+                    <img src="img/icons/dropdown-arrow.svg" alt="">
+                  </div>
+                  <div class="radio-group radio-group_money">
+                    <div class="radio-item">
+                      <input type="radio" id="7-1" name="7">
+                      <label for="7-1">
+                        <p>£100k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-2" name="7">
+                      <label for="7-2">
+                        <p>£150k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-3" name="7">
+                      <label for="7-3">
+                        <p>£200k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-4" name="7">
+                      <label for="7-4">
+                        <p>£250k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-5" name="7">
+                      <label for="7-5">
+                        <p>£300k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-6" name="7">
+                      <label for="7-6">
+                        <p>£350k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-7" name="7">
+                      <label for="7-7">
+                        <p>£400k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-8" name="7">
+                      <label for="7-8">
+                        <p>£450k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-9" name="7">
+                      <label for="7-9">
+                        <p>£500k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-10" name="7">
+                      <label for="7-10">
+                        <p>£550k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-11" name="7">
+                      <label for="7-11">
+                        <p>£600k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-12" name="7">
+                      <label for="7-12">
+                        <p>£650k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-13" name="7">
+                      <label for="7-13">
+                        <p>£700k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-14" name="7">
+                      <label for="7-14">
+                        <p>£750k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-15" name="7">
+                      <label for="7-15">
+                        <p>£800k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-16" name="7">
+                      <label for="7-16">
+                        <p>£850k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-17" name="7">
+                      <label for="7-17">
+                        <p>£900k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="7-18" name="7">
+                      <label for="7-18">
+                        <p>£950k</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>8</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2>And what’s the <strong>Maximum value</strong> of the <strong>purchase price range</strong>you are interested in?*</h2>
+                  <p>Please select a Maximum value below.</p>
+                </div>
+                <div class="item__input">
+                  <div class="input-wrapper ">
+                    <input type="text" placeholder="Type or select an option">
+                    <img src="img/icons/dropdown-arrow.svg" alt="">
+                  </div>
+                  <div class="radio-group radio-group_money">
+                    <div class="radio-item">
+                      <input type="radio" id="8-1" name="8">
+                      <label for="8-1">
+                        <p>£100k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-2" name="8">
+                      <label for="8-2">
+                        <p>£150k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-3" name="8">
+                      <label for="8-3">
+                        <p>£200k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-4" name="8">
+                      <label for="8-4">
+                        <p>£250k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-5" name="8">
+                      <label for="8-5">
+                        <p>£300k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-6" name="8">
+                      <label for="8-6">
+                        <p>£350k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-7" name="8">
+                      <label for="8-7">
+                        <p>£400k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-8" name="8">
+                      <label for="8-8">
+                        <p>£450k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-9" name="8">
+                      <label for="8-9">
+                        <p>£500k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-10" name="8">
+                      <label for="8-10">
+                        <p>£550k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-11" name="8">
+                      <label for="8-11">
+                        <p>£600k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-12" name="8">
+                      <label for="8-12">
+                        <p>£650k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-13" name="8">
+                      <label for="8-13">
+                        <p>£700k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-14" name="8">
+                      <label for="8-14">
+                        <p>£750k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-15" name="8">
+                      <label for="8-15">
+                        <p>£800k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-16" name="8">
+                      <label for="8-16">
+                        <p>£850k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-17" name="8">
+                      <label for="8-17">
+                        <p>£900k</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="8-18" name="8">
+                      <label for="8-18">
+                        <p>£950k</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>9</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2>Thanks. Do you need to consider any <strong>care needs</strong> for yourself or anyone living with you?*</h2>
+                </div>
+                <div class="item__input">
+                  <div class="radio-group">
+                    <div class="radio-item">
+                      <input type="radio" id="9-1" name="9">
+                      <label for="9-1">
+                        <span>a</span>
+                        <p>No</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="9-2" name="9">
+                      <label for="9-2">
+                        <span>b</span>
+                        <p>Minimal support</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="9-3" name="9">
+                      <label for="9-3">
+                        <span>c</span>
+                        <p>Personal Care</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="9-4" name="9">
+                      <label for="9-4">
+                        <span>d</span>
+                        <p>Full time care</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>10</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2>Where in the UK would you ideally like your <strong>Retirement home</strong> to be located?*</h2>
+                  <p>Please enter a full UK Postcode if you can, or a District Postcode (e.g. AB1) or the Nearest Town</p>
+                </div>
+                <div class="item__input">
+                  <div class="input-wrapper ">
+                    <input type="text" placeholder="Type your answer here ...">
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>11</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2><strong>How far</strong> from the Centre of <strong>Oxford</strong> would you be prepared to look?*</h2>
+                </div>
+                <div class="item__input">
+                  <div class="radio-group">
+                    <div class="radio-item">
+                      <input type="radio" id="11-1" name="11">
+                      <label for="11-1">
+                        <span>a</span>
+                        <p>5 miles</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="11-2" name="11">
+                      <label for="11-2">
+                        <span>b</span>
+                        <p>10 miles</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="11-3" name="11">
+                      <label for="11-3">
+                        <span>c</span>
+                        <p>20 miles</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="11-4" name="11">
+                      <label for="11-4">
+                        <span>d</span>
+                        <p>30 miles</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>12</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2><strong>How many</strong> developments would you like to be included on your shortlist?*</h2>
+                  <p>Our search may return many developments so let us know if we should limit the shortlist to those that best match your search requirements.</p>
+                </div>
+                <div class="item__input">
+                  <div class="radio-group radio-group_simple-row">
+                    <div class="radio-item">
+                      <input type="radio" id="12-1" name="12">
+                      <label for="12-1">
+                        <span>a</span>
+                        <p>Up to 4</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="12-2" name="12">
+                      <label for="12-2">
+                        <span>b</span>
+                        <p>Up to 6</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="12-3" name="12">
+                      <label for="12-3">
+                        <span>c</span>
+                        <p>Up to 8</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item ">
+                <div class="item__counter">
+                  <strong>13</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+
+                  <h2><strong>How soon</strong> are you looking to select a retirement home?*</h2>
+                  <p>This will help us to ensure we suggest providers with aviability.</p>
+                </div>
+                <div class="item__input">
+                  <div class="radio-group radio-group_simple-row">
+                    <div class="radio-item">
+                      <input type="radio" id="13-1" name="13">
+                      <label for="13-1">
+                        <span>a</span>
+                        <p>ASAP</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="13-2" name="13">
+                      <label for="13-2">
+                        <span>b</span>
+                        <p>2-4 weeks</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="13-3" name="13">
+                      <label for="13-3">
+                        <span>c</span>
+                        <p>1-3 months</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="13-4" name="13">
+                      <label for="13-4">
+                        <span>d</span>
+                        <p>3-6 months</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="13-5" name="13">
+                      <label for="13-5">
+                        <span>e</span>
+                        <p>6-12 months</p>
+                      </label>
+                    </div>
+                    <div class="radio-item">
+                      <input type="radio" id="13-6" name="13">
+                      <label for="13-6">
+                        <span>f</span>
+                        <p>More</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="quest__item">
+                <div class="item__counter">
+                  <strong>14</strong>
+                  <span>/14</span>
+                </div>
+                <div class="item__text">
+                  <h2>Thanks <span class="name">Sarah</span>, we will send you a shortlist of developments that meet your search</h2>
+                  <h2><strong>May we have your email address?*</strong></h2>
+                  <p>We won’t pass your email address onto providers until or unless you give us permission to do so.</p>
+                </div>
+                <div class="item__input">
+                  <div class="input-wrapper ">
+                    <input type="email" placeholder="name@example.com">
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn__fit submit-btn">
+                <p>Ok</p>
+                <img src="img/icons/form-btn-arrow.svg" alt="">
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <include src="assets/templates/footer.html"></include>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- <script src="./js/swiper-bundle.js"></script> -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

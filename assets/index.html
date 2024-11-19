@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Albie</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="./css/swiper-bundle.css" /> -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <include src="assets/templates/header.html"></include>
+
+  <main>
+    <section class="main-banner">
+      <div class="main-banner__text-with-img container">
+        <div class="text-with-img__content">
+          <div class="text-with-img__text">
+            <h1>
+              <strong>Find</strong> Care Homes, Home Care, Live-In Care and Retirement Living <strong>with Live Availability</strong>
+            </h1>
+          </div>
+          <div class="text-with-img__img">
+            <img src="./img/main-banner-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="main-banner__location-form">
+        <div class="container">
+          <div class="location-form__radio-group">
+            <input type="radio" name="location" id="radio-1" checked />
+            <label for="radio-1">
+              <img src="img/icons/location-radio-icon-1.svg" alt="">
+              <span>Care Homes</span>
+            </label>
+            <input type="radio" name="location" id="radio-2" />
+            <label for="radio-2">
+              <img src="img/icons/location-radio-icon-2.svg" alt="">
+              <span>Home Care</span>
+            </label>
+            <input type="radio" name="location" id="radio-3" />
+            <label for="radio-3">
+              <img src="img/icons/location-radio-icon-3.svg" alt="">
+              <span>Live-in Care</span>
+            </label>
+            <input type="radio" name="location" id="radio-4" />
+            <label for="radio-4">
+              <img src="img/icons/location-radio-icon-4.svg" alt="">
+              <span>Retirement Living</span>
+            </label>
+          </div>
+          <div class="location-form__search">
+            <div class="search-wrapper search-input">
+              <div class="input-wrapper">
+                <input class="postcode visible" type="text" placeholder="Enter Location or Postcode">
+                <input class="provider-input" type="text" placeholder="Enter Service or Provider name">
+              </div>
+              <div class="select">
+                <img class="icon" src="img/icons/location-select-1.svg" alt="">
+                <span>Care Homes</span>
+                <img class="select-arrow" src="img/icons/select-arrow.svg" alt="">
+                <div class="select-list">
+                  <div class="select-list__item">
+                    <img src="img/icons/location-select-1.svg" alt="">
+                    <span>Care Homes</span>
+                  </div>
+                  <div class="select-list__item">
+                    <img src="img/icons/location-select-2.svg" alt="">
+                    <span>Home Care</span>
+                  </div>
+                  <div class="select-list__item">
+                    <img src="img/icons/location-select-3.svg" alt="">
+                    <span>Live-in Care</span>
+                  </div>
+                  <div class="select-list__item">
+                    <img src="img/icons/location-select-4.svg" alt="">
+                    <span>Retirement Living</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-input__tabs">
+            <a class="tab-active" onclick="switchInputAndTab(event)" href=" javascript:void(0)" data-input="postcode">Search by <strong>Location</strong></a>
+            <a href="javascript:void(0)" onclick="switchInputAndTab(event)" data-input="provider-input">Search by <strong>Service or Provider Name</strong></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="main-banner__cta">
+        <div class="container">
+          <p class="cta__text">Request a <b>FREE</b> care home shortlist from <b>Albie!</b></p>
+          <a href="#" class="btn">
+            <p>Get Free Shortlist</p>
+            <span>With Live Availability</span>
+          </a>
+        </div>
+      </div>
+      <div class="main-banner__arrow-text">
+        <div class="container">
+          <img src="img/icons/arrow-text.svg" alt="">
+          <p>Please click here and advise us on your care needs, we will email a shortlist of providers with availability</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-with-img">
+      <div class="container">
+        <div class="text-with-img__content">
+          <div class="text-with-img__img">
+            <img src="./img/index-1.png" alt="" />
+
+          </div>
+          <div class="text-with-img__text">
+            <h2>Why People <strong>Choose Us</strong></h2>
+            <p>
+              On our site, we understand that caring for the elderly is an important and responsible matter. We offer a wide range of services, including Care Homes, Home Care, Live-In Care and Retirement Living with Live Availability. <br /><br />
+              Our team provides affordable and reliable solutions for every client. We strive to create a comfortable and safe environment where everyone can enjoy a fulfilling and quality retirement life. Choose us to take care of your health and well-being in your senior years.
+            </p>
+          </div>
+          <div class="text-with-img__others">
+            <div class="text-with-img__rating">
+              <img src="img/rating.png" alt="">
+            </div>
+            <div class="other__wrapper">
+              <div class="text-with-img__icons">
+                <div class="item">
+                  <img src="img/icons/index-icon-1.svg" alt="">
+                  <span>Helping you find the right fit</span>
+                </div>
+                <div class="item">
+                  <img src="img/icons/index-icon-2.svg" alt="">
+                  <span>Your comfort is our prioruty</span>
+                </div>
+                <div class="item">
+                  <img src="img/icons/index-icon-3.svg" alt="">
+                  <span>Here when you need us</span>
+                </div>
+              </div>
+              <div class="text-with-img__btn-wrapper">
+                <a href="#" class="btn btn__fit">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div class="container">
+        <div class="how-it-works__content">
+          <h2 class="section-heading section-heading_center"><strong>How It Works</strong></h2>
+          <p class="how-it-works__subheading">Search <strong>over 45,000</strong> providers in the UK or talk to our team for impartial advice about your elderly care options. Call us on <a href="tel:0800 756 6920">0800 756 6920</a></p>
+          <div class="how-it-works__steps">
+            <div class="step">
+              <div class="step__number">
+                <span>1</span>
+              </div>
+              <div class="step__text">
+                <h3>Search</h3>
+                <p>Using our intuitive search, relatives can easily find the best options for their loved ones</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__number">
+                <span>2</span>
+              </div>
+              <div class="step__text">
+                <h3>Filter</h3>
+                <p>Our powerful filters allow you to refine your search by service type and location</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__number">
+                <span>3</span>
+              </div>
+              <div class="step__text">
+                <h3>Contact</h3>
+                <p>After finding the ideal option, you can directly contact the provider or get additional information</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials__content">
+          <h2 class="section-heading section-heading_center"><strong>Testimonials</strong></h2>
+          <div class="testimonials__slider">
+            <div class="swiper ">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <img class="testimonial__icon" src="img/icons/testimonials-icon.svg" alt="">
+                    <div class="testimonial__img">
+                      <img src="img/avatar-1.png" alt="">
+                    </div>
+                    <div class="testimonial__text">
+                      <h3>Merry Howatt</h3>
+                      <p>When I was looking for care for my grandmother, I found the perfect care home with all the services I needed</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <img class="testimonial__icon" src="img/icons/testimonials-icon.svg" alt="">
+                    <div class="testimonial__img">
+                      <img src="img/avatar-2.png" alt="">
+                    </div>
+                    <div class="testimonial__text">
+                      <h3>Stephen White</h3>
+                      <p>My family used this site to find home care for my aunt. The filters were very helpful in selecting suitable options</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <img class="testimonial__icon" src="img/icons/testimonials-icon.svg" alt="">
+                    <div class="testimonial__img">
+                      <img src="img/avatar-1.png" alt="">
+                    </div>
+                    <div class="testimonial__text">
+                      <h3>Merry Howatt</h3>
+                      <p>When I was looking for care for my grandmother, I found the perfect care home with all the services I needed</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <img class="testimonial__icon" src="img/icons/testimonials-icon.svg" alt="">
+                    <div class="testimonial__img">
+                      <img src="img/avatar-2.png" alt="">
+                    </div>
+                    <div class="testimonial__text">
+                      <h3>Stephen White</h3>
+                      <p>My family used this site to find home care for my aunt. The filters were very helpful in selecting suitable options</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-navigate">
+              <div class="swiper-button-prev">
+                <img src="img/icons/arrow-left.svg" alt="">
+              </div>
+              <div class="swiper-button-next">
+                <img src="img/icons/arrow-right.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="blogs">
+      <div class="container">
+        <div class="blogs__content">
+          <div class="blogs__heading">
+            <h2 class="section-heading"><strong>Blogs</strong></h2>
+            <p>
+              It is a space for communication and business information for those looking for the best solutions for elderly care.<br /><br />
+              Here, we'll share helpful tips, the latest industry news, and real-life success stories
+            </p>
+            <a href="#" class="btn">SEE ALL POSTS</a>
+          </div>
+          <div class="blogs__items">
+            <div class="item">
+              <img src="img/main-blogs-1.png" alt="" class="item__img">
+              <div class="item__text">
+                <h3>Medical examinations that cannot be missed</h3>
+                <p>What medical tests are important for your health? Learn how a timely checkup can facilitate treatment and support your lifestyle</p>
+                <a href="#">
+                  learn more
+                  <img src="img/icons/link-arrow.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/main-blogs-2.png" alt="" class="item__img">
+              <div class="item__text">
+                <h3>Peculiarities of patient care</h3>
+                <p>Consider important aspects of quality and individualized care for patients, taking into account personal needs and health status</p>
+                <a href="#">
+                  learn more
+                  <img src="img/icons/link-arrow.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/main-blogs-3.png" alt="" class="item__img">
+              <div class="item__text">
+                <h3>A healthy diet for the golden age generation</h3>
+                <p>Analysis of proper nutrition for the elderly. Includes the study of eating habits, essential nutrients and optimal dietary approaches</p>
+                <a href="#">
+                  learn more
+                  <img src="img/icons/link-arrow.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="small-banner">
+      <div class="container">
+        <div class="small-banner__content">
+          <img src="img/small-banner-img.png" alt="" class="small-banner__img">
+          <div class="small-banner__text">
+            <h2>Get one step <strong>With Us</strong></h2>
+            <p>To receive your <strong>FREE SHORTLIST WITH LIVE AVAILABILITY</strong> to your email inbox, please kindly complete all questions and we will be back to you shortly</p>
+            <a href="#" class="btn">
+              <p>Get Free Shortlist</p>
+              <span>With Live Availability</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <include src="assets/templates/footer.html"></include>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- <script src="./js/swiper-bundle.js"></script> -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
